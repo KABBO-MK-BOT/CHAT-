@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "github link",
+  name: "fork",
   version: "1.0.0",
   permission: 2,
   credits: "Farhan",
-  description: "github link",
+  description: "fork",
   prefix: true, 
   category: "user", 
-  usages: "sex",
+  usages: "fork",
   cooldowns: 5,
   dependencies: {
 	}
@@ -20,13 +20,7 @@ const fs = global.nodemodule["fs-extra"];
      "https://i.postimg.cc/WbKvfHpB/Screenshot-2025-0713-035741.png", 
             
             "https://i.postimg.cc/k5NPGMNC/Screenshot-2025-0713-035903.png", 
-            
-            "https://i.postimg.cc/WbKvfHpB/Screenshot-2025-0713-035741.png",
-
-"https://i.postimg.cc/k5NPGMNC/Screenshot-2025-0713-035903.png",
-            
-            "",
-    ];
-   var callback = () => api.sendMessage({body:`👉{https://github.com/DJ-FARHAN-BOT/MIM}👉-এই নাও বস ফারহান এর GITHUB -BOT- লিংক ফলো করে দিও-!!✔️😌}+\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+ ];
+   var callback = () => api.sendMessage({body:`👉-এই নাও বস ফারহান এর GITHUB -BOT- লিংক ফলো করে দিও-♻️💯                                            👉{https://github.com/DJ-FARHAN-BOT/MIM}+\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
