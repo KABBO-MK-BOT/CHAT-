@@ -19,7 +19,7 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
   if (body.indexOf("😃")==0 || body.indexOf("😄")==0 || body.indexOf("😆")==0 || body.indexOf("😆")==0) {
     var msg = {
         body: "~ তোমার দাঁত গুলো চক চক করছে গো..🙉🥀",
-        attachment: fs.createReadStream(__dirname + `/Nayan/datcokcok.mp3`)
+        attachment: fs.createReadStream(__dirname + `/noprefix/voice2.mp3`)
       }
       api.sendMessage( msg, threadID, messageID);
     api.setMessageReaction("😉", event.messageID, (err) => {}, true)
