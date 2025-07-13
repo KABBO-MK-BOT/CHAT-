@@ -25,7 +25,17 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = [  "https://i.postimg.cc/FK3csPDc/received-1288306369676615.jpg",
+var link = [  
+"https://i.ibb.co/jfqMF07/image.jpg",
+"https://i.ibb.co/tBBCS4y/image.jpg",
+"https://i.ibb.co/3zpyMVY/image.jpg",
+"https://i.ibb.co/gWbWT8k/image.jpg",
+"https://i.ibb.co/mHtyD1P/image.jpg",
+"https://i.ibb.co/vPHNhdY/image.jpg",
+"https://i.ibb.co/rm6rPjb/image.jpg",
+"https://i.ibb.co/7GpN2GW/image.jpg",
+"https://i.ibb.co/CnfMVpg/image.jpg",
+  "https://i.postimg.cc/FK3csPDc/received-1288306369676615.jpg",
   "https://i.postimg.cc/bwGk4Ynm/received-9871365789653149.png",
   "https://i.postimg.cc/m2gQNygf/received-1041859204804649.png",
   "https://i.postimg.cc/Y0bQBh8s/received-1518047376240939.jpg",
@@ -413,7 +423,6 @@ var link = [  "https://i.postimg.cc/FK3csPDc/received-1288306369676615.jpg",
 "https://i.postimg.cc/J7Qvbzc1/zpbi-Yu-P1-WBTUrc.jpg"];
   
 var callback = () => api.sendMessage({body:`「👉-উ্ঁফ্ঁ বে্ঁবি্ঁ আ্ঁস্তে্ঁ,!!🖕🥵」
-
-${global.config.BOTNAME}`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+‎《𓆩${global.config.BOTNAME}𓆪》`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
