@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "12+",
+  name: "npx",
   version: "1.0.0",
   permission: 2,
   credits: "Farhan",
-  description: "12+",
+  description: "npx",
   prefix: true, 
   category: "user", 
-  usages: "12+",
+  usages: "npx",
   cooldowns: 5,
   dependencies: {
 	}
