@@ -424,7 +424,7 @@ var link = [
   
 var callback = () => api.sendMessage({body:`「👉-উ্ঁফ্ঁ বে্ঁবি্ঁ আ্ঁস্তে্ঁ,!!🖕🥵」
 ‎
-🐰🍒𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆🍒🐰 
-                                                      《${hours}:${minutes}:${seconds}》`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+「♻️-𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆-♻️」 
+    《${hours}:${minutes}:${seconds}》`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
