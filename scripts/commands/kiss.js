@@ -17,7 +17,7 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
   var link = [
-     "https://i.postimg.cc/WbKvfHpB/Screenshot-2025-0713-035741.png", 
+     "https://i.postimg.cc/0yjnGt46/Screenshot-2025-0714-013718.png", 
             
             "https://i.postimg.cc/k5NPGMNC/Screenshot-2025-0713-035903.png", 
  ];
