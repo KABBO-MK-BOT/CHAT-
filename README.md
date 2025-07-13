@@ -1,5 +1,5 @@
 <img src="https://i.imgur.com/FR81uSO.jpeg" alt="banner">
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 𝐌𝐈𝐌𝐈 -𝗕𝗢𝗧 -𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> ‎《𓆩𝐃𝐄𝐕𝐈𝐋-𝐅𝐀𝐑𝐇𝐀𝐍𓆪》 𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
 <!-- Github README -->
 
 <p align="center"><img src="https://img.shields.io/badge/I AM FARHAN %20BANGLADESHI- NOOB PROGRAMMER-green?colorA=%23ff0000&colorB=%23017e40&style=flat-square">
