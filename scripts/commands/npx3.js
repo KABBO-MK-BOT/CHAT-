@@ -1,23 +1,31 @@
 module.exports.config = {
   name: "npx",
   version: "1.0.0",
-  permission: 2,
-  credits: "Farhan",
-  description: "npx",
-  prefix: true, 
-  category: "user", 
-  usages: "npx",
+  permission: 0,
+  credits: "farhan",
+  prefix: true,
+  description: "search results on google",
+  category: "without prefix",
+  usages: "google [text]",
   cooldowns: 5,
-  dependencies: {
-	}
+  dependencies: 
+{
+  "request":"",
+  "fs-extra":"",
+  "axios":""
+}
 };
-
-module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
+module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-  var link = [
-  "https://i.postimg.cc/FK3csPDc/received-1288306369676615.jpg",
+const time = process.uptime(),
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
+const moment = require("moment-timezone");
+var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link = [  "https://i.postimg.cc/FK3csPDc/received-1288306369676615.jpg",
   "https://i.postimg.cc/bwGk4Ynm/received-9871365789653149.png",
   "https://i.postimg.cc/m2gQNygf/received-1041859204804649.png",
   "https://i.postimg.cc/Y0bQBh8s/received-1518047376240939.jpg",
@@ -402,8 +410,10 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.postimg.cc/9MdSgW6Y/ht-D3-Wi-JQM0md-Fc-Ig.jpg",
 "https://i.postimg.cc/L6CWbQbw/q1o-DN4-IN-Zd6-K5s7.jpg",
 "https://i.postimg.cc/1th2Kgjz/Vbn0-ZPWBu-CB05-j-J.jpg",
-"https://i.postimg.cc/J7Qvbzc1/zpbi-Yu-P1-WBTUrc.jpg",
-  ];
-   var callback = () => api.sendMessage({body:`「👉-উ্ঁফ্ঁ বে্ঁবি্ঁ আ্ঁস্তে্ঁ,!! 🖕🥵」          +\nSố ảnh: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
+"https://i.postimg.cc/J7Qvbzc1/zpbi-Yu-P1-WBTUrc.jpg"];
+  
+var callback = () => api.sendMessage({body:`「👉-উ্ঁফ্ঁ বে্ঁবি্ঁ আ্ঁস্তে্ঁ,!!🖕🥵」
+
+${global.config.BOTNAME}`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
